@@ -1,5 +1,5 @@
+import TodoItem from "./components/todoItem"
 import { task } from "./data/todos"
-
 
 
 function App() {
@@ -12,9 +12,7 @@ function App() {
     <div className="max-w-lg  mx-auto">
         <div className="space-y-4">
             {task.map(todo => (
-                <p key={todo.id} className="text-lg">
-                    {todo.title}
-                </p>
+                <TodoItem todo={todo}/>
             ))}
         </div>
     </div>

@@ -1,4 +1,6 @@
-import TodoItem from "./components/todoItem"
+
+
+import TodoItem from "./components/TodoItem"
 import { task } from "./data/todos"
 
 
@@ -6,16 +8,20 @@ function App() {
 
 
   return (
-   <main className="py-10 bg-red-50 h-screen">
-    <h1 className="font-bold text-3xl text-center">Your To Do's</h1>
+   <main className="flex justify-center items-center h-screen w-screen bg-custom-gradient">
+    <div className="lg:w-2/5 sm:w-8/12 xs:w-11/12  bg-white  rounded-xl py-5">
+    <h1 className="font-bold text-3xl text-center ">To-Do List</h1>
 
-    <div className="max-w-lg  mx-auto">
-        <div className="space-y-4">
+    <div className="  mx-auto  rounded-sm p-6">
+        <div className="space-y-3">
             {task.map(todo => (
-                <TodoItem todo={todo}/>
+                <TodoItem todo={todo} />
             ))}
-        </div>
+        </div> 
     </div>
+
+    </div>
+
    </main>
   )
 }

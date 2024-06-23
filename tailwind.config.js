@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        screens: {
+            'xs': '300px', // Custom extra small breakpoint
+          },
+        backgroundImage: {
+            'custom-gradient': 'linear-gradient(180deg, rgba(45, 112, 125, 0.73) 0%, #163e92 100%)',
+          },
+    },
   },
   plugins: [],
 }

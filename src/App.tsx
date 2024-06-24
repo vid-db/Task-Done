@@ -18,7 +18,7 @@ function App() {
 
   return (
    <main className="flex justify-center items-center h-screen w-screen bg-custom-gradient">
-    <div className="lg:w-2/5 sm:w-8/12 xs:w-11/12 bg-slate-50
+    <div className="lg:w-4/12 sm:w-3/6 xs:w-11/12 bg-slate-50
       rounded-xl py-8">
     <img src="/list to do.png" alt="ToDozImage" className="w-2/5 m-auto" />
     {/* <h1 className="font-semibold text-3xl text-slate-800 text-center pt-8">To-do List</h1> */}

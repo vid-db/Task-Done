@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
         screens: {
-            'xs': '300px', // Custom extra small breakpoint
+            'xs': '350px',
+            'xxs': '300px', // Custom extra small breakpoint
           },
         backgroundImage: {
             'custom-gradient': 'linear-gradient(180deg, rgba(45, 112, 125, 0.73) 0%, #163e92 100%)',

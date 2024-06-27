@@ -1,17 +1,25 @@
 
-export default function addToDoForm() {
-    // const [input, setInput] = useState();
+import { useState } from "react";
+
+interface AddTodoFormProps {
+    onSubmit: (title: string) => void;
+}
+
+export default function AddToDoForm({ onSubmit }: AddTodoFormProps) {
+
+    const [input, setInput] = useState("");
     function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
+        if (!input.trim()) return;
+        onSubmit(input)
+        setInput('');
     }
 
     return(
         <form className="flex  gap-2 pb-8 m-auto sm:w-11/12   " onSubmit={handleSubmit}>
             <input 
-            type="text"
-            // value={input}
-            // onChange = {(e) => setInput(e.target.value)}
-
+            value={input}
+            onChange = {(e) => setInput(e.target.value)}
             placeholder="what needs to be done?"
              className=" grow rounded-3xl border border-gray-400 py-3 px-5   placeholder-gray-400 focus:border-gray-600 outline-none hover:border-gray-600 "
             />

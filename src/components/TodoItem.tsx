@@ -1,13 +1,15 @@
+import { X } from "lucide-react";
 import { Todo } from "../type/todo";
 
 interface TodoItemProps {
     todo: Todo;
     OncompletedChange: (id: number, completed: boolean) => void;
+    onDelete: (id:number) => void;
 }
-export default function TodoItem ({ todo, OncompletedChange }: TodoItemProps)  {
+export default function TodoItem ({ todo, OncompletedChange, onDelete }: TodoItemProps)  {
   return (
-    <div>
-        <label className="flex items-center gap-5  p-3  hover:bg-opacity-50 xxs:mx-5">
+    <div className="flex items-center gap-5 xs:mx-1 sm:mx-8">
+        <label className="flex grow items-center gap-5  py-3  hover:bg-opacity-50">
             <input 
             type="checkbox" 
             checked={todo.completed}
@@ -24,8 +26,10 @@ export default function TodoItem ({ todo, OncompletedChange }: TodoItemProps)  {
             </span>
 
         </label>
-      
 
+        <button className="mr-6" onClick={() => onDelete(todo.id)}>   
+            <X size={20} className="text-gray-400 "/>  
+        </button>
     </div>
   )
 }

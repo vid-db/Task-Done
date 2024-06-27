@@ -14,7 +14,7 @@ export const task: Todo[] = [
     {
         id: 2,
         title: "Make a Responsible UI",
-        completed: true,
+        completed: false,
     },
     {
         id: 3,

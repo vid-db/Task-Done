@@ -12,12 +12,18 @@ export default function TodoList ({
     onCompletedChange, 
     onDelete
 }: TodoListProps) {
+    const todoSortded = todos.sort((a,b) => {
+        if(a.completed === b.completed) {
+            return(b.id-a.id)
+        }
+        return a.completed ? 1:-1;
+    });
 
 
     return(
         <>
             <div className="space-y-3">
-                {todos.map(todo => (
+                {todoSortded.map(todo => (
                     <TodoItem
                     key={todo.id} 
                     OncompletedChange={onCompletedChange}

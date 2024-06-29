@@ -4,6 +4,7 @@ import { useState } from "react";
 import AddToDoForm from "./components/AddTodoForm";
 
 import TodoList from "./components/TodoList";
+import TodoSummary from "./components/TodoSummary";
 import { task } from "./data/todos";
 
 
@@ -21,7 +22,7 @@ function App() {
     function addTodo(title: string) {
         setTodos((prevTodos) => [
             {
-                id: prevTodos.length + 1,
+                id: Date.now(),
                 title,
                 completed: false
             },
@@ -39,11 +40,9 @@ function App() {
   return (
    <main className="flex justify-center   h-screen w-screen bg-custom-gradient overflow-y-auto">
     <div className="lg:w-4/12 sm:w-3/6 xs:w-11/12 my-auto  bg-slate-50
-      rounded-xl py-8">
+      rounded-xl pt-7 pb-6">
     <img src="/list to do.png" alt="ToDozImage" className="w-2/5 m-auto" />
-    {/* <h1 className="font-semibold text-3xl text-slate-800 text-center pt-8">To-do List</h1> */}
-
-    <div className="  mx-auto  rounded-sm py-4 px-6">
+    <div className="  mx-auto  rounded-sm pt-4 pb-8 px-6">
         
     <AddToDoForm
     onSubmit={addTodo}
@@ -54,6 +53,9 @@ function App() {
     onDelete={deleteTodo}/>
  
     </div>
+    <TodoSummary
+    todos={todos}
+    />
 
     </div>
 

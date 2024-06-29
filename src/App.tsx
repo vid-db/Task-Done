@@ -37,6 +37,10 @@ function App() {
         setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id))
     }
 
+    function deleteAllCompleted() {
+         setTodos(prevTodos => prevTodos.filter(todo => !todo.completed ))
+    }
+
   return (
    <main className="flex justify-center   h-screen w-screen bg-custom-gradient overflow-y-auto">
     <div className="lg:w-4/12 sm:w-3/6 xs:w-11/12 my-auto  bg-slate-50
@@ -55,6 +59,7 @@ function App() {
     </div>
     <TodoSummary
     todos={todos}
+    deleteAllCompleted={deleteAllCompleted}
     />
 
     </div>

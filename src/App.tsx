@@ -20,7 +20,7 @@ function App() {
 
     useEffect(() => {
         localStorage.setItem("todos", JSON.stringify(todos));
-    }, [todos]); // save all side eefects or changes in todos array of object 
+    }, [todos]); // save all side efects or changes in todos array of object 
 
 
     function setTodoCompleted(id: number, completed: boolean) {

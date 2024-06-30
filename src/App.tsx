@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import AddToDoForm from "./components/AddTodoForm";
-
 import TodoList from "./components/TodoList";
 import TodoSummary from "./components/TodoSummary";
 import { task } from "./data/todos";
@@ -55,7 +54,7 @@ function App() {
             <div className="lg:w-4/12 sm:w-3/6 xs:w-11/12 my-auto  bg-slate-50
       rounded-xl pt-7 pb-6">
 
-                <img src="/list to do.png" alt="ToDozImage" className="w-2/5 m-auto" />
+                <img src="/list_to_do.png" alt="ToDozImage" className="w-2/5 m-auto" />
 
                 <div className="  mx-auto  rounded-sm pt-4 pb-8 px-6">
 
@@ -77,5 +76,4 @@ function App() {
         </main>
     )
 }
-
 export default App

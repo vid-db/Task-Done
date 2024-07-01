@@ -54,7 +54,7 @@ function App() {
             <div className="lg:w-4/12 sm:w-3/6 xs:w-11/12 my-auto  bg-slate-50
       rounded-xl pt-7 pb-6">
 
-                <img src="/listTodo.png" alt="ToDosImage" className="w-2/5 m-auto" />
+                <img src="listTodo.png" alt="ToDosImage" className="w-2/5 m-auto" />
 
                 <div className="  mx-auto  rounded-sm pt-4 pb-8 px-6">
 

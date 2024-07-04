@@ -4,7 +4,8 @@
   <br>
   Tech Stack: React, Node js, TypeScript, Tailwind CSS
   <br>
-  See it in action here: <a href="https://vid-db.github.io/Simple-To-Do-List/">https://vid-db.github.io/Simple-To-Do-List/</a>
+  See it in action here: 
+  <a taget="_blank" href="https://vid-db.github.io/Simple-To-Do-List/">https://vid-db.github.io/Simple-To-Do-List/</a>
 </p>
 
 

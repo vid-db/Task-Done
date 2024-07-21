@@ -1,6 +1,6 @@
 # Task Done
 <p>
-  Task Done is an responsive todo list webpage designed to help you efficiently manage your daily tasks.
+  Task Done is an responsive to-do list webpage designed to helps you organize and prioritize your daily activities effortlessly.
   <br>
   Tech Stack: React, Node js, TypeScript, Tailwind CSS
   <br>

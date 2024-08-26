@@ -1,7 +1,7 @@
 import { X } from "lucide-react";
 import { Todo } from "../type/todo";
 
-interface TodoItemProps {
+type TodoItemProps = {
     todo: Todo;
     OncompletedChange: (id: number, completed: boolean) => void;
     onDelete: (id: number) => void;

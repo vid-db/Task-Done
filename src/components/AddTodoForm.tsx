@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 
-interface AddTodoFormProps {
+type AddTodoFormProps = {
     onSubmit: (title: string) => void;
 }
 

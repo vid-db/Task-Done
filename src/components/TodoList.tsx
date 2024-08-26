@@ -1,7 +1,7 @@
 import { Todo } from "../type/todo";
 import TodoItem from "./TodoItem";
 
-interface TodoListProps {
+type TodoListProps = {
     todos: Todo[];
     onCompletedChange: (id: number, completed: boolean) => void;
     onDelete: (id: number) => void;
@@ -18,7 +18,6 @@ export default function TodoList({
         }
         return a.completed ? 1 : -1;
     });
-
 
     return (
         <>
